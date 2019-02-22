@@ -1,0 +1,167 @@
+section {
+  width: 100%;
+  padding: 20px 0 0 0;
+  background-color: #FFF0F5;
+}
+
+.about {
+  background-color: white;
+  margin-bottom: 50px;
+  h2 {
+    color: rgb(59, 59, 59);
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  p{
+    margin: 0 40px; 
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+.skills {
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(33.33vh - 14px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+
+  &:hover .skill-item_image{
+    transform: scale(1.1);
+  }
+
+  &_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.5s;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #2d3651;
+  }
+
+  &_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: #2d3651;
+    transition: opacity 0.5s;
+  }
+
+  &:hover .skill-item_overlay {
+    opacity: 0.95;
+  }
+
+  &_title {
+    /*position: absolute;*/
+    z-index: 2;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    transition: color 0.5s;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  i {
+   /* position: absolute;*/
+    z-index: 2;
+    padding: 10px 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+
+  
+}
+
+.skill-item:hover {
+  i {
+    color: #d68926;
+  }
+
+  .skill-item_title {
+    color: #d68926;
+  }
+}
+
+.caption {
+  h2 {
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgb(59, 59, 59);
+    text-align: center;
+  }
+}
+
+.template-slider {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  h2 {
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgb(59, 59, 59);
+    text-align: center;
+  }
+}
+
+.skills-slider {
+  width: 50%;
+  margin: 10px auto;
+
+  .slick-prev:before,
+  .slick-next:before,
+  .slick-dots li button:before 
+  {
+    color: #8B4513;
+  }
+
+  div {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .press-kinozal {
+    color: #F0F8FF;
+    top: 0;
+  }
+}
+
+
+
+

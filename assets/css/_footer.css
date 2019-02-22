@@ -1,0 +1,50 @@
+.contacts {
+  padding: 50px 20px 70px;
+  text-align: center;
+  background-color: #1b2030; }
+  .contacts .fab {
+    font-size: 46px; }
+  .contacts span:nth-of-type(1) {
+    font-weight: 100; }
+  .contacts span:nth-of-type(2) {
+    color: #e5e5e5;
+    font-weight: 700; }
+
+.contacts-social {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .contacts-social a {
+    display: block;
+    padding: 10px;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s; }
+    .contacts-social a:hover, .contacts-social a:focus {
+      color: #d66926; }
+  .contacts-social::after {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 75px / 2);
+    width: 75px;
+    height: 2px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.1); }
+
+.contacts-copy {
+  background-color: #1b2030;
+  text-align: center; }
+  .contacts-copy span:hover {
+    color: #d66926; }
+
+.contacts-wrapper {
+  background-color: #1b2030; }
+
+.contacts-social .fab {
+  font-size: 20px; }

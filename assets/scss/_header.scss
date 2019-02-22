@@ -1,0 +1,62 @@
+header {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+    background: 
+    linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.25)), url(../img/r12-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 30%;
+  position: relative;
+}
+
+header strong {
+  padding: 10px 5px 10px 8px;
+  margin-bottom: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 3px solid black;
+}
+header span {
+  color: rgb(59, 59, 59);
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-logo-wrapper {
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 24px 55px;
+  margin-bottom: 8px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #FFFFF0;
+  background-color: rgb(59, 59, 59);
+
+  &:hover,
+  &:focus 
+  {
+    opacity: 0.8;
+    color: #DAA520;
+  }
+}
